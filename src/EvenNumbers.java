@@ -5,7 +5,9 @@
  */
 public class EvenNumbers {
     public static void main(String[] args) {
-        // Even numbers divisible by 6
+        // Even numbers divisible by 6 but not by 4
+        // We jump 2 each time because we're not interested
+        // in odd numbers
         for (int x = 2; x < 100; x = x + 2) {
             if (x % 6 == 0 && x%4 != 0) {
                 System.out.println(x);
